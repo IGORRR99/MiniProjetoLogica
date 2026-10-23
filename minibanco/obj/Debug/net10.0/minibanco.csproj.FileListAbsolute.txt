@@ -1,0 +1,14 @@
+D:\VEECECOUDE\minibanco\obj\Debug\net10.0\minibanco.GeneratedMSBuildEditorConfig.editorconfig
+D:\VEECECOUDE\minibanco\obj\Debug\net10.0\minibanco.AssemblyInfoInputs.cache
+D:\VEECECOUDE\minibanco\obj\Debug\net10.0\minibanco.AssemblyInfo.cs
+D:\VEECECOUDE\minibanco\obj\Debug\net10.0\minibanco.csproj.CoreCompileInputs.cache
+D:\VEECECOUDE\minibanco\bin\Debug\net10.0\minibanco.exe
+D:\VEECECOUDE\minibanco\bin\Debug\net10.0\minibanco.deps.json
+D:\VEECECOUDE\minibanco\bin\Debug\net10.0\minibanco.runtimeconfig.json
+D:\VEECECOUDE\minibanco\bin\Debug\net10.0\minibanco.dll
+D:\VEECECOUDE\minibanco\bin\Debug\net10.0\minibanco.pdb
+D:\VEECECOUDE\minibanco\obj\Debug\net10.0\minibanco.dll
+D:\VEECECOUDE\minibanco\obj\Debug\net10.0\refint\minibanco.dll
+D:\VEECECOUDE\minibanco\obj\Debug\net10.0\minibanco.pdb
+D:\VEECECOUDE\minibanco\obj\Debug\net10.0\minibanco.genruntimeconfig.cache
+D:\VEECECOUDE\minibanco\obj\Debug\net10.0\ref\minibanco.dll
