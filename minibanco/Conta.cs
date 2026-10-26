@@ -1,11 +1,8 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace minibanco
 {
-    public class Conta
+    public abstract class Conta
     {
         public string Titular { get; }
         public decimal Saldo { get; protected set; }
@@ -34,7 +31,7 @@ namespace minibanco
                 return false;
             }
 
-            if (valor > Saldo + LimiteChequeEspecial)
+            if (valor > Saldo)
             {
                 Console.WriteLine("Saldo insuficiente.");
                 return false;
@@ -42,7 +39,6 @@ namespace minibanco
 
             Saldo -= valor;
             return true;
-
         }
     }
 }
