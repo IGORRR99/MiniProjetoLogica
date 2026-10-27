@@ -1,6 +1,9 @@
-﻿using minibanco;
+﻿using System.Globalization;1
+using minibanco;
 
 bool executando = true;
+
+CultureInfo.CurrentCulture = new CultureInfo("pt-BR");
 
 List<Conta> contas = new List<Conta>();
 
@@ -126,7 +129,8 @@ while (executando)
                 break;
             }
         case "4":
-            Console.WriteLine("Fechar mês (em construção)");
+            contas.ForEach(c => c.FecharMes());
+            Console.WriteLine("Mês fechado para todas as contas.");
             break;
         case "5":
             {
@@ -139,13 +143,18 @@ while (executando)
                     foreach (Conta conta in contas)
                     {
                         Console.WriteLine($"{conta.GetType().Name} | Titular: {conta.Titular} | Saldo: {conta.Saldo:C}");
+
+                        foreach (Transacao t in conta.Transacoes)
+                        {
+                            Console.WriteLine($"    {t.Data:dd/MM HH:mm} - {t.Tipo}: {t.Valor:C}");
+                        }
                     }
                 }
                 break;
             }
 
         case "6":
-            Console.WriteLine("Relatório (em construção)");
+            Console.WriteLine("Relatório");
             break;
         case "0":
             executando = false;

@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace minibanco
 {
@@ -6,7 +7,7 @@ namespace minibanco
     {
         public string Titular { get; }
         public decimal Saldo { get; protected set; }
-
+        public List<Transacao> Transacoes { get; } = new List<Transacao>();
         public Conta(string titular, decimal saldoInicial)
         {
             Titular = titular;
@@ -21,6 +22,7 @@ namespace minibanco
                 return;
             }
             Saldo += valor;
+            Transacoes.Add(new Transacao(TipoTransacao.Deposito, valor));
         }
 
         public virtual bool Sacar(decimal valor)
